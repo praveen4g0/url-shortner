@@ -76,3 +76,23 @@ it's pretty simple now service is connected to repository interface (implementat
 Now we have build api business logic layer central part now we need to link our service to universal serilazer to could connect with transport http 
 
 repo <--- service ---> serializer  ---> http
+
+
+### Implementing serializer service
+
+now we support two serializers 
+
+1. json
+2. msgPack(Compact version json light weight and faster)
+
+### Implementing Repository 
+1. For MongoDB
+2. Redis
+3. In memory cache (Local)
+
+### Implementing API's to connect to service, swagger docs
+
+providing make files to get swagger.yaml generated automatically
+
+
+
