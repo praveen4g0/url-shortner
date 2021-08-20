@@ -37,7 +37,7 @@ func main() {
 
 	errs := make(chan error, 2)
 	go func() {
-		fmt.Println("Listening on port :", httpPort())
+		fmt.Println("Listening on port ", httpPort())
 		errs <- http.ListenAndServe(httpPort(), r)
 	}()
 
@@ -84,5 +84,4 @@ func chooseRepo() shortner.RedirectRepository {
 		}
 		return repo
 	}
-	return nil
 }
